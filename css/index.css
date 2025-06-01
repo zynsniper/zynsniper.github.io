@@ -1,5 +1,5 @@
 body {
-  background-color: #B3B3B3;
+  background-color: #222831;
 }
 
 /* The sidebar menu */
@@ -10,7 +10,7 @@ body {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #495159; /* Black */
+  background-color: #393E46; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }
@@ -20,13 +20,13 @@ body {
   padding: 30px 16px 30px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #84732b;
+  color: #EEEEEE;
   display: block;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #686868;
 }
 
 /* Style page content */
