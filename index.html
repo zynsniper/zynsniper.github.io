@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Chi's webpage</title>
 </head>
 <body>
-    <div class="sidebar">
+    <div id="sidebar" class="sidebar">
         <div class="logo">
             <img src="images/profile.png" alt="Profile Picture">
         </div>
-        <a href="#">About me</a>
+        <a href="index.html">About Me</a>
         <a href="#">Projects</a>
         <a href="#">Skills</a>
-        <a href="resume.html">Resume</a>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact Me</a>
     </div>
 
-    <main class="main">
+    <main id="main" class="main">
+        <button class="openbtn" onclick="toggleSideBar()" onmouseover="toggleSideBar()">&#9776; Open Sidebar</button>
         <h1>About Me</h1>
-        <p>This is the About Me page.</p>
+        <p>-3rd year computer science student @ University of New Brunswick.</p>
     </main>
+
+    <script src="js/sidebar.js"></script>
 </body>
 </html>

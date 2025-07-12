@@ -1,0 +1,71 @@
+body {
+  background-color: #3b3b3b;
+}
+
+.sidebar {
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.logo {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.logo img {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #C7D6D5;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #6D7275;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn a:hover{
+  color: #2c2c2c;
+}
+
+.sidebar a {
+  padding: 30px 16px 30px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #EEEEEE;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #686868;
+}
+
+.main {
+  transition: margin-left .5s; 
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+#pdf-canvas {
+  display: block;
+  margin: 30px auto;
+  border: 2px solid #00ADB5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
