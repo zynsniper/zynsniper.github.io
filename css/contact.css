@@ -2,14 +2,32 @@
     display: inline-block;
     background-color: #00adb5;
     color: #fff;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-size: 18px;
+    padding: 0.75em 1.5em;
+    border-radius: 0.375em;
+    font-size: 1em;
     font-weight: bold;
     text-decoration: none;
-    margin-top: 16px;
+    margin-top: 1em;
     transition: background 0.2s;
 }
 .download-btn:hover {
     background-color: #008891;
+}
+
+.social-btn {
+    display: inline-block;
+    background-color: #2a2c2c;
+    color: #fff;
+    padding: 0.75em 1em;
+    border-radius: 0.375em;
+    text-decoration: none;
+    margin-top: 1em;
+    transition: background 0.2s;
+}
+.social-btn:hover {
+    background-color: #008891;
+}
+.social-section {
+    display: flex;
+    gap: 0.5em;
 }
