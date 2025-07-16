@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Chi's webpage</title>
 </head>
 <body>
@@ -11,18 +14,81 @@
         <div class="logo">
             <img src="images/profile.png" alt="Profile Picture">
         </div>
-        <a href="index.html">About Me</a>
-        <a href="#">Projects</a>
-        <a href="#">Skills</a>
-        <a href="contact.html">Contact Me</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
     </div>
 
     <main id="main" class="main">
         <button class="openbtn" onclick="toggleSideBar()" onmouseover="toggleSideBar()">&#9776; Open Sidebar</button>
-        <h1>About Me</h1>
-        <p>-3rd year computer science student @ University of New Brunswick.</p>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>-3rd year computer science student @ University of New Brunswick.</p>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            
+            <div class="card-container">
+
+                <div class="card">
+                    <div class="carousel">
+                        <img src="images\EU4.png" class="carousel-img active">
+                        <img src="images\Steamworkshop.png" class="carousel-img">    
+                        <button class="carousel-btn prev" onclick="prevImage(this)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="nextImage(this)">&#10095;</button>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Europa Universalis IV Mod</h3>
+                        <p>A mod for the game EU4 that allows players to begin the game as the Roman Empire. Scripted under the Clausewitz engine.</p>
+                        <a href="https://github.com/zynsniper/RomanEmpireQuickstart" class="card-btn"><i class="fa-brands fa-github"></i> Read more</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="carousel">
+                        <img src="images\login.png" class="carousel-img active">
+                        <button class="carousel-btn prev" onclick="prevImage(this)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="nextImage(this)">&#10095;</button>
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3>Investment portfolio tracker</h3>
+                        <p>A full-stack web application to track and manage portfolios.</p>
+                        <a href="https://github.com/zynsniper/Portfolio-Tracker" class="card-btn"><i class="fa-brands fa-github"></i> Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h1>Skills</h1>
+            <p>Skills details go here...</p>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>Contact details go here...</p>
+
+            <div class="social-section">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i> Fredericton, NB
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i> Email: cheang5337@gmail.com
+                </p>
+                <p>
+                    <a href="https://github.com/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://discord.com/users/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://www.linkedin.com/in/chisengcheang/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
+                </p>
+            </div>
+        </section>
     </main>
 
+    <script src="js/carousel.js"></script>
     <script src="js/sidebar.js"></script>
 </body>
 </html>
