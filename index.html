@@ -76,9 +76,16 @@
                 <p>
                     <i class="fa-solid fa-location-dot"></i> Fredericton, NB
                 </p>
-                <p>
+
+                <form id="contact-form" onsubmit="return checkCaptcha(event)">
+                    <label for="captcha">What is my preferred name?</label>
+                    <input type="text" id="captcha" name="captcha" required>
+                    <button type="submit">Show email</button>
+                </form>
+                <p id="protected-email" style="display:none">
                     <i class="fa-solid fa-envelope"></i> Email: cheang5337@gmail.com
                 </p>
+
                 <p>
                     <a href="https://github.com/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
                     <a href="https://discord.com/users/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-discord"></i></a>
@@ -88,7 +95,8 @@
         </section>
     </main>
 
-    <script src="js/carousel.js"></script>
     <script src="js/sidebar.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/captcha.js"></script>
 </body>
 </html>
