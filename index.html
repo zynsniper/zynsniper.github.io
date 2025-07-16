@@ -20,6 +20,7 @@
         <a href="#contact">Contact Me</a>
     </div>
 
+<!--------------------------------------------------------------------------------------------------------------->
     <main id="main" class="main">
         <button class="openbtn" onclick="toggleSideBar()" onmouseover="toggleSideBar()">&#9776; Open Sidebar</button>
         <section id="about">
@@ -27,6 +28,7 @@
             <p>-3rd year computer science student @ University of New Brunswick.</p>
         </section>
 
+<!--------------------------------------------------------------------------------------------------------------->
         <section id="projects">
             <h1>Projects</h1>
             
@@ -50,6 +52,7 @@
                 <div class="card">
                     <div class="carousel">
                         <img src="images\login.png" class="carousel-img active">
+                        <img src="images\dashboard.png" class="carousel-img">
                         <button class="carousel-btn prev" onclick="prevImage(this)">&#10094;</button>
                         <button class="carousel-btn next" onclick="nextImage(this)">&#10095;</button>
                     </div>
@@ -63,34 +66,37 @@
             </div>
         </section>
 
+<!--------------------------------------------------------------------------------------------------------------->
         <section id="skills">
             <h1>Skills</h1>
             <p>Skills details go here...</p>
         </section>
 
+<!--------------------------------------------------------------------------------------------------------------->
         <section id="contact">
             <h1>Contact Me</h1>
             <p>Contact details go here...</p>
 
-            <div class="social-section">
-                <p>
-                    <i class="fa-solid fa-location-dot"></i> Fredericton, NB
-                </p>
+            <div class="contact-flex">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-location-dot"></i> Fredericton, NB</p>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form" onsubmit="return checkCaptcha(event)">
+                        <label for="captcha">What is my preferred name?</label>
+                        <input type="text" id="captcha" name="captcha" required>
+                        <button type="submit">Show email</button>
+                    </form>
+                    <p id="protected-email" style="display:none">
+                        <i class="fa-solid fa-envelope"></i> Email: cheang5337@gmail.com
+                    </p>
+                </div>
+            </div>
 
-                <form id="contact-form" onsubmit="return checkCaptcha(event)">
-                    <label for="captcha">What is my preferred name?</label>
-                    <input type="text" id="captcha" name="captcha" required>
-                    <button type="submit">Show email</button>
-                </form>
-                <p id="protected-email" style="display:none">
-                    <i class="fa-solid fa-envelope"></i> Email: cheang5337@gmail.com
-                </p>
-
-                <p>
-                    <a href="https://github.com/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://discord.com/users/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-discord"></i></a>
-                    <a href="https://www.linkedin.com/in/chisengcheang/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
-                </p>
+            <div class="social-center">
+                <a href="https://github.com/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                <a href="https://discord.com/users/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.linkedin.com/in/chisengcheang/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </section>
     </main>

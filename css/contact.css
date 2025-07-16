@@ -31,3 +31,40 @@
     display: flex;
     gap: 0.5em;
 }
+
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+
+.contact-left {
+    flex: 1 1 200px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.contact-right {
+    flex: 2 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact-form {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.social-center {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
