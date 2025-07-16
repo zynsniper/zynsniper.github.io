@@ -15,3 +15,11 @@ function prevImage(btn) {
     idx = (idx - 1 + images.length) % images.length;
     images[idx].classList.add('active');
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.carousel').forEach(carousel => {
+        setInterval(() => {
+            nextImage(carousel);
+        }, 5000); //5s
+    });
+});
