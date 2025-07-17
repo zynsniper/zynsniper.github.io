@@ -10,6 +10,10 @@
     <title>Chi's webpage</title>
 </head>
 <body>
+    <div>
+        <button id="scrollButton" onclick="scrollPage()" title="Scroll">&#8595;</button>
+    </div>
+
     <div id="sidebar" class="sidebar">
         <div class="logo">
             <img src="images/profile.png" alt="Profile Picture">
@@ -19,12 +23,15 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact Me</a>
     </div>
-
+    
 <!--------------------------------------------------------------------------------------------------------------->
     <main id="main" class="main">
         <button class="openbtn" onclick="toggleSideBar()" onmouseover="toggleSideBar()">&#9776; Open Sidebar</button>
         <section id="about">
-            <h1>About Me</h1>
+            <h1>Chi-Seng Cheang</h1>
+            <div class="logo">
+                <img src="images/profile.png" alt="Profile Picture">
+            </div>
             <p>
                 3rd-year Computer Science student @ University of New Brunswick with a passion for systems design, programming logic, and all things tech. 
                 I am also fluent in Cantonese, Mandarin, English, and Malay.
@@ -94,36 +101,42 @@
 <!--------------------------------------------------------------------------------------------------------------->
         <section id="contact">
             <h1>Contact Me</h1>
-            <p>Contact details go here...</p>
 
-            <div class="contact-flex">
-                <div class="contact-left">
-                    <p><i class="fa-solid fa-location-dot"></i> Fredericton, NB</p>
-                </div>
-                <div class="contact-right">
+            <div class="contact-form">
+
+                    <p class="timezone"><i class="fa-solid fa-clock"></i> UTC -3</p>
+
                     <form id="contact-form" onsubmit="return checkCaptcha(event)">
                         <label for="captcha">What is my preferred name?</label>
                         <input type="text" id="captcha" name="captcha" required>
                         <button type="submit">Show email</button>
                     </form>
+
                     <p id="protected-email" style="display:none">
                         <i class="fa-solid fa-envelope"></i> Email: cheang5337@gmail.com
                     </p>
-                </div>
+
             </div>
 
-            <a href="https://github.com/zynsniper/zynsniper.github.io/blob/main/assets/resume2.2.pdf" target="_blank" class="download-btn">
-                <i class="fa-solid fa-download"></i> Download CV
-            </a>
 
             <div class="social-center">
-                <a href="https://github.com/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
-                <a href="https://discord.com/users/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-discord"></i></a>
-                <a href="https://www.linkedin.com/in/chisengcheang/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/zynsniper/zynsniper.github.io/blob/main/assets/resume2.2.pdf" target="_blank" class="social-btn">
+                    <i class="fa-solid fa-file-pdf"></i> Resumé
+                </a>
+                <a href="https://github.com/zynsniper" target="_blank" class="social-btn">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/chisengcheang/" target="_blank" class="social-btn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/chiiiseng/" target="_blank" class="social-btn">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </div>
         </section>
     </main>
 
+    <script src="js/scroll.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/captcha.js"></script>
