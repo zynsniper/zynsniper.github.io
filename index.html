@@ -25,15 +25,33 @@
         <button class="openbtn" onclick="toggleSideBar()" onmouseover="toggleSideBar()">&#9776; Open Sidebar</button>
         <section id="about">
             <h1>About Me</h1>
-            <p>-3rd year computer science student @ University of New Brunswick.</p>
+            <p>
+                3rd-year Computer Science student @ University of New Brunswick with a passion for systems design, programming logic, and all things tech. 
+                I am also fluent in Cantonese, Mandarin, English, and Malay.
+            </p>
+            <p>
+                I learned English through video games and have participated in various esports tournaments across titles like CS:GO, League of Legends, and Overwatch; providing experience that shaped my love for teamwork, strategy, and interactive systems.
+            </p>
+            <p>
+                In high school, I built custom computers as a freelance gig, which sparked my interest in hardware and optimization. Today, that curiosity drives my approach to software design and user experience.
+            </p>
+
+            <h2>Career Goals</h2>
+            <p>
+                My goal is to work in a field that incorporates creativity and practicality into problem-solving, such as: game development, AI systems, or interactive application design.
+                I hope to contribute to projects that have real-world impact, especially those that prioritize user experiences.
+            </p>
+            <p>
+                In the long term, I aim to be part of a team that values innovation, collaboration, and continuous learning. Where others and I can grow together.
+            </p>
         </section>
 
 <!--------------------------------------------------------------------------------------------------------------->
         <section id="projects">
             <h1>Projects</h1>
+            <div id="particles-js"></div>
             
             <div class="card-container">
-
                 <div class="card">
                     <div class="carousel">
                         <img src="images\EU4.png" class="carousel-img active">
@@ -45,7 +63,8 @@
                     <div class="card-content">
                         <h3>Europa Universalis IV Mod</h3>
                         <p>A mod for the game EU4 that allows players to begin the game as the Roman Empire. Scripted under the Clausewitz engine.</p>
-                        <a href="https://github.com/zynsniper/RomanEmpireQuickstart" class="card-btn"><i class="fa-brands fa-github"></i> Read more</a>
+                        <a href="https://github.com/zynsniper/RomanEmpireQuickstart" class="card-btn"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3474338220" class="card-btn"><i class="fa-brands fa-steam"></i></a>
                     </div>
                 </div>
 
@@ -60,7 +79,7 @@
                     <div class="card-content">
                         <h3>Investment portfolio tracker</h3>
                         <p>A full-stack web application to track and manage portfolios.</p>
-                        <a href="https://github.com/zynsniper/Portfolio-Tracker" class="card-btn"><i class="fa-brands fa-github"></i> Read more</a>
+                        <a href="https://github.com/zynsniper/Portfolio-Tracker" class="card-btn"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -93,6 +112,10 @@
                 </div>
             </div>
 
+            <a href="https://github.com/zynsniper/zynsniper.github.io/blob/main/assets/resume2.2.pdf" target="_blank" class="download-btn">
+                <i class="fa-solid fa-download"></i> Download CV
+            </a>
+
             <div class="social-center">
                 <a href="https://github.com/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
                 <a href="https://discord.com/users/zynsniper" target="_blank" class="social-btn"><i class="fa-brands fa-discord"></i></a>
@@ -104,5 +127,7 @@
     <script src="js/sidebar.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/captcha.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
 </body>
 </html>

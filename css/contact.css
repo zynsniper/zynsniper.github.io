@@ -1,6 +1,6 @@
 .download-btn {
     display: inline-block;
-    background-color: #00adb5;
+    background-color: #2e3030;
     color: #fff;
     padding: 0.75em 1.5em;
     border-radius: 0.375em;
@@ -11,7 +11,7 @@
     transition: background 0.2s;
 }
 .download-btn:hover {
-    background-color: #008891;
+    background-color: #82c1c5;
 }
 
 .social-btn {
