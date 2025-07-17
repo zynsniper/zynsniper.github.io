@@ -1,25 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
   background-color: #3b3b3b;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar {
   height: 100%; 
   width: 0; 
   position: fixed;
-  z-index: 1; 
   top: 0;
   left: 0;
+  z-index: 1; 
   background-color: #111; 
   overflow-x: hidden;
   padding-top: 60px; 
   transition: 0.5s; 
+}
+.sidebar a {
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #eeeeee;
+  display: block;
+}
+.sidebar a:hover {
+  background-color: #2e2e2e;
+  color: #00adb5;
 }
 
 .logo {
   text-align: center;
   padding-bottom: 20px;
 }
-
 .logo img {
   width: 100px;
   border-radius: 50%;
@@ -27,39 +44,29 @@ body {
 }
 
 .openbtn {
-  font-size: 20px;
+  position: fixed;
+  font-size: 18px;
   cursor: pointer;
   background-color: #6D7275;
   color: white;
   padding: 10px 15px;
   border: none;
 }
-
 .openbtn a:hover{
+  background-color: #8bd9dd;
   color: #2c2c2c;
 }
 
-.sidebar a {
-  padding: 30px 16px 30px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #EEEEEE;
-  display: block;
-}
-
-.sidebar a:hover {
-  color: #686868;
-}
 
 .main {
   transition: margin-left .5s; 
-  padding: 0px 10px;
+  padding: 2em 1em;
+}
+section {
+    padding: 2em 1em;
+    min-height: 0vh;
 }
 
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
 
 #pdf-canvas {
   display: block;
@@ -70,11 +77,8 @@ body {
   background-color: white;
 }
 
-section {
-    padding: 4em 1em;
-    min-height: 100vh;
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }
 
-html {
-    scroll-behavior: smooth;
-}
