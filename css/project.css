@@ -2,6 +2,11 @@
     position: relative;
     overflow: hidden;
 }
+#projects h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #7e57c2;
+}
 
 
 .card-container{
@@ -11,7 +16,7 @@
     margin-top: 100px;
 }
 .card{
-    width: 25em;
+    width: 25rem;
     background-color: #001427;
     color: #708D81;
     border-radius: 8px;
@@ -25,7 +30,7 @@
     height: auto;
 }
 .card-content{
-    padding: 1em;
+    padding: 1rem;
 }
 .card-content h3{
     font-size: 23px;
@@ -106,4 +111,23 @@
 .carousel:hover .carousel-btn {
     opacity: 1;
     pointer-events: auto;
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 80%;
+        height: fit-content;
+    }
+    
+    .card img {
+        height: 120px;
+    }
+    
+    .card-content {
+        padding: 0.8rem;
+    }
+    
+    .card-content h3 {
+        font-size: 18px;
+    }
 }
