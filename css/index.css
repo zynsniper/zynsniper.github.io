@@ -61,7 +61,8 @@ body {
 
 .main {
   transition: margin-left .5s; 
-  padding: 2em 1em;
+  padding: 0.5rem 0.25rem 0.25rem 0.5rem;
+  font-size: 1.5rem;
 }
 section {
     padding: 2em 1em;
@@ -252,6 +253,23 @@ section {
   }
 
   section, .main, #about {
-  padding: 1.5em 1em;
+    padding: 1.5em 1em;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image-container {
+    margin-bottom: 1em;
+  }
+
+  .profile-content {
+    text-align: center;
+  }
+
+  .profile-content .intro {
+    font-size: 1rem;
   }
 }
