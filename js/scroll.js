@@ -21,3 +21,10 @@ function scrollPage() {
         }
     }
 }
+
+window.addEventListener('scroll', () => {
+    const btn = document.getElementById('scrollButton');
+    const atBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 5;
+
+    btn.innerHTML = atBottom ? '&#8593;' : '&#8595;';
+})
